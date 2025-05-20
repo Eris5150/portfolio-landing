@@ -1,0 +1,125 @@
+<section class="home-container">
+
+  <!-- 👤 Intro Section -->
+  <div class="intro-section container d-flex flex-column flex-md-row align-items-center justify-content-center">
+
+    <!-- Imagen estilo redondeado -->
+    <div class="intro-image-container">
+      <img src="assets/images/profile.png" alt="Erick Rodríguez" class="intro-image" />
+    </div>
+
+    <!-- Texto -->
+    <div class="intro-text ms-md-5 mt-4 mt-md-0">
+      <h1>Erick Rodríguez</h1>
+      <h2 class="text-muted">Full-Stack Developer</h2>
+      <p>
+        I’m a full-stack developer passionate about building modern, intelligent web apps. My work spans from AI-powered dashboards with Angular and Spring Boot, to interactive UIs and cloud deployment pipelines.
+      </p>
+      <p>
+        Tools I use daily: Angular · Spring Boot · TypeScript · Python · Flask · SQL · WPF · AWS
+      </p>
+      <a href="assets/resume-erick.pdf" class="btn btn-outline-light mt-3" download>View Resume</a>
+    </div>
+  </div>
+
+  <!-- 🧑‍💼 Experience Section -->
+  <div class="experience-section">
+    <h3>Professional Experiences</h3>
+    <div class="exp">
+      <h5>Server Assistant &#64; Ruby Soho <span class="date">Oct 2023 – Apr 2025</span></h5>
+      <ul>
+        <li>Provided front- and back-of-house support in high-pressure service environments.</li>
+        <li>Strengthened team coordination and client interaction skills.</li>
+      </ul>
+    </div>
+    <div class="exp">
+      <h5>IT Support Specialist &#64; TP <span class="date">Feb 2023 – Jul 2023</span></h5>
+      <ul>
+        <li>Resolved hardware/software issues and guided users remotely.</li>
+        <li>Provided technical support in fast-paced environments.</li>
+      </ul>
+    </div>
+    <a routerLink="/experiences" class="btn btn-outline-light mt-3">View More</a>
+  </div>
+
+  <!-- 🧩 Projects Section -->
+  <div class="projects-section">
+    <h3>Personal Projects</h3>
+
+    <div class="project-card row">
+      <div class="col-md-6">
+        <img src="assets/images/restaurant.png" alt="Restaurant Demo" class="img-fluid rounded" />
+      </div>
+      <div class="col-md-6">
+        <h4>Restaurant Management System</h4>
+        <p>Spring Boot + Thymeleaf app with user roles, order handling, and H2 DB. Launch instantly in Gitpod.</p>
+        <a routerLink="/projects" class="btn btn-primary">View More</a>
+      </div>
+    </div>
+
+    <div class="project-card row">
+      <div class="col-md-6">
+        <img src="assets/images/tictactoe.png" alt="Tic Tac Toe" class="img-fluid rounded" />
+      </div>
+      <div class="col-md-6">
+        <h4>Tic Tac Toe (Vanilla JS)</h4>
+        <p>A classic game built with responsive UI, available live on S3.</p>
+        <a href="https://erickrodriguez.net/tic-tac-toe" target="_blank" class="btn btn-secondary">Play Now</a>
+      </div>
+    </div>
+
+    <div class="project-card row">
+      <div class="col-md-6">
+        <img src="assets/images/landing.png" alt="Landing" class="img-fluid rounded" />
+      </div>
+      <div class="col-md-6">
+        <h4>HTML Landing Page</h4>
+        <p>Responsive one-page static site with minimal JavaScript. Fully accessible and optimized for mobile.</p>
+        <a href="https://erickrodriguez.net/Landing" target="_blank" class="btn btn-secondary">View Live</a>
+      </div>
+    </div>
+
+    <div class="text-center mt-4">
+      <a routerLink="/projects" class="btn btn-outline-light">View All Projects</a>
+    </div>
+  </div>
+
+  <!-- 🛠 Skills Section -->
+  <div class="skills-section">
+    <h3>Skills</h3>
+    <div class="skill-chips">
+      <span>Angular</span>
+      <span>TypeScript</span>
+      <span>Spring Boot</span>
+      <span>Python</span>
+      <span>SQL</span>
+      <span>MongoDB</span>
+      <span>AWS</span>
+      <span>Flask</span>
+      <span>Bootstrap</span>
+    </div>
+    <div class="text-center mt-4">
+      <a routerLink="/skills" class="btn btn-outline-light">See Full Skillset</a>
+    </div>
+  </div>
+
+  <!-- 🎓 Education -->
+  <div class="education-section">
+    <h3>Education</h3>
+    <div class="edu">
+      <strong>Sheridan College – Computer Programming</strong>
+      <p class="date">Sep 2023 – Apr 2025</p>
+      <p>Courses in Java, Angular, Networking, DB Design, AI, Security, and Mobile Web App Dev.</p>
+    </div>
+    <div class="text-center mt-4">
+      <a routerLink="/education" class="btn btn-outline-light">More About My Education</a>
+    </div>
+  </div>
+
+  <!-- 💬 Quote -->
+  <div class="quote-section text-center">
+    <blockquote>
+      “Programming isn't about what you know; it's about what you can figure out.”
+    </blockquote>
+  </div>
+</section>
