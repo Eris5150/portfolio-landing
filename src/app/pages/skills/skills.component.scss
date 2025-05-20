@@ -1,0 +1,55 @@
+:host {
+  display: block;
+  background-color: #111;
+  color: white;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+.skills-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+  background-color: #111;
+  color: white;
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #444;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .skill-entry {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #333;
+    text-align: left;
+
+    h4 {
+      font-size: 1.45rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      color: #e0e0e0;
+    }
+
+    p {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: #bbb;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+  }
+
+  .text-center {
+    text-align: center;
+    margin-top: 2rem;
+
+    .btn {
+      font-size: 0.95rem;
+      padding: 0.5rem 1.5rem;
+    }
+  }
+}

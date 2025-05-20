@@ -22,67 +22,102 @@
     </div>
   </div>
 
-  <!-- 🧑‍💼 Experience Section -->
-  <div class="experience-section">
-    <h3>Professional Experiences</h3>
-    <div class="exp">
-      <h5>Server Assistant &#64; Ruby Soho <span class="date">Oct 2023 – Apr 2025</span></h5>
-      <ul>
-        <li>Provided front- and back-of-house support in high-pressure service environments.</li>
-        <li>Strengthened team coordination and client interaction skills.</li>
-      </ul>
-    </div>
-    <div class="exp">
-      <h5>IT Support Specialist &#64; TP <span class="date">Feb 2023 – Jul 2023</span></h5>
-      <ul>
-        <li>Resolved hardware/software issues and guided users remotely.</li>
-        <li>Provided technical support in fast-paced environments.</li>
-      </ul>
-    </div>
-    <a routerLink="/experiences" class="btn btn-outline-light mt-3">View More</a>
+ <!-- 🧑‍💼 Experience Section -->
+<div class="experience-section">
+  <h3>Professional Experiences</h3>
+
+  <!-- Freelance / Disaluvi -->
+  <div class="exp">
+    <h5>Full-Stack Developer (Freelance) &#64; Disaluvi <span class="date">Apr 2025 – Present</span></h5>
+    <ul>
+      <li>Leading the development of a complete web solution for a mid-size company offering architectural solutions (doors, windows, facades).</li>
+      <li>Built a responsive Angular frontend and Spring Boot backend with real-time messaging, email automation, file uploads, and admin panels.</li>
+      <li>Implemented secure forms for clients, job applicants, and suppliers, integrated with MongoDB and AWS S3.</li>
+      <li>Designed a modular architecture to enable future scalability and AI-based resume analysis.</li>
+    </ul>
   </div>
 
-  <!-- 🧩 Projects Section -->
-  <div class="projects-section">
-    <h3>Personal Projects</h3>
+  <!-- Ruby Soho -->
+  <div class="exp">
+    <h5>Server Assistant &#64; Ruby Soho <span class="date">Oct 2023 – Apr 2025</span></h5>
+    <ul>
+      <li>Provided front- and back-of-house support in high-pressure service environments.</li>
+      <li>Strengthened team coordination and client interaction skills.</li>
+    </ul>
+  </div>
 
-    <div class="project-card row">
-      <div class="col-md-6">
-        <img src="assets/images/restaurant.png" alt="Restaurant Demo" class="img-fluid rounded" />
-      </div>
-      <div class="col-md-6">
-        <h4>Restaurant Management System</h4>
-        <p>Spring Boot + Thymeleaf app with user roles, order handling, and H2 DB. Launch instantly in Gitpod.</p>
-        <a routerLink="/projects" class="btn btn-primary">View More</a>
-      </div>
+  <!-- Teleperformance -->
+  <div class="exp">
+    <h5>IT Support Specialist &#64; TP <span class="date">Feb 2023 – Jul 2023</span></h5>
+    <ul>
+      <li>Resolved hardware/software issues and guided users remotely.</li>
+      <li>Provided technical support in fast-paced environments.</li>
+    </ul>
+  </div>
+
+  <a routerLink="/experiences" class="btn btn-outline-light mt-3">View More</a>
+</div>
+
+    <!-- 🧩 Projects Section -->
+<div class="projects-section">
+  <h3>Personal Projects</h3>
+
+  <!-- 🍽️ Restaurant Management System -->
+  <div class="project-card row">
+    <div class="col-md-6">
+      <img src="assets/images/restaurant.png" alt="Restaurant Demo" class="img-fluid rounded" />
     </div>
-
-    <div class="project-card row">
-      <div class="col-md-6">
-        <img src="assets/images/tictactoe.png" alt="Tic Tac Toe" class="img-fluid rounded" />
-      </div>
-      <div class="col-md-6">
-        <h4>Tic Tac Toe (Vanilla JS)</h4>
-        <p>A classic game built with responsive UI, available live on S3.</p>
-        <a href="https://erickrodriguez.net/tic-tac-toe" target="_blank" class="btn btn-secondary">Play Now</a>
-      </div>
-    </div>
-
-    <div class="project-card row">
-      <div class="col-md-6">
-        <img src="assets/images/landing.png" alt="Landing" class="img-fluid rounded" />
-      </div>
-      <div class="col-md-6">
-        <h4>HTML Landing Page</h4>
-        <p>Responsive one-page static site with minimal JavaScript. Fully accessible and optimized for mobile.</p>
-        <a href="https://erickrodriguez.net/Landing" target="_blank" class="btn btn-secondary">View Live</a>
-      </div>
-    </div>
-
-    <div class="text-center mt-4">
-      <a routerLink="/projects" class="btn btn-outline-light">View All Projects</a>
+    <div class="col-md-6">
+      <h4>Restaurant Management System</h4>
+      <p>Spring Boot + Thymeleaf app with user roles, order handling, and H2 DB. Launch instantly in Gitpod.</p>
+      <a routerLink="/projects" class="btn btn-primary">View More</a>
     </div>
   </div>
+
+  <!-- 🎟️ Angular Movie Booking App -->
+  <div class="project-card row">
+    <div class="col-md-6">
+      <img src="assets/images/angular.png" alt="Angular Movie App" class="img-fluid rounded" />
+    </div>
+    <div class="col-md-6">
+      <h4>Angular Movie Booking App</h4>
+      <p>
+        A modern movie ticket booking application with Angular. Features form validation, booking summaries,
+        and admin panel connectivity. Fully deployed and functional.
+      </p>
+      <a href="https://erickrodriguez.net/angularBooking" target="_blank" class="btn btn-secondary">Try Live</a>
+    </div>
+  </div>
+
+  <!-- 🎮 Tic Tac Toe -->
+  <div class="project-card row">
+    <div class="col-md-6">
+      <img src="assets/images/tictactoe.png" alt="Tic Tac Toe" class="img-fluid rounded" />
+    </div>
+    <div class="col-md-6">
+      <h4>Tic Tac Toe (Vanilla JS)</h4>
+      <p>A classic game built with responsive UI, available live on S3.</p>
+      <a href="https://erickrodriguez.net/tic-tac-toe" target="_blank" class="btn btn-secondary">Play Now</a>
+    </div>
+  </div>
+
+  <!-- 💻 HTML Landing Page -->
+  <div class="project-card row">
+    <div class="col-md-6">
+      <img src="assets/images/landing.png" alt="Landing" class="img-fluid rounded" />
+    </div>
+    <div class="col-md-6">
+      <h4>HTML Landing Page</h4>
+      <p>Responsive one-page static site with minimal JavaScript. Fully accessible and optimized for mobile.</p>
+      <a href="https://erickrodriguez.net/Landing" target="_blank" class="btn btn-secondary">View Live</a>
+    </div>
+  </div>
+
+  <div class="text-center mt-4">
+    <a routerLink="/projects" class="btn btn-outline-light">View All Projects</a>
+  </div>
+</div>
+
 
   <!-- 🛠 Skills Section -->
   <div class="skills-section">
@@ -96,25 +131,54 @@
       <span>MongoDB</span>
       <span>AWS</span>
       <span>Flask</span>
-      <span>Bootstrap</span>
     </div>
     <div class="text-center mt-4">
       <a routerLink="/skills" class="btn btn-outline-light">See Full Skillset</a>
     </div>
   </div>
 
-  <!-- 🎓 Education -->
-  <div class="education-section">
-    <h3>Education</h3>
-    <div class="edu">
-      <strong>Sheridan College – Computer Programming</strong>
-      <p class="date">Sep 2023 – Apr 2025</p>
-      <p>Courses in Java, Angular, Networking, DB Design, AI, Security, and Mobile Web App Dev.</p>
-    </div>
-    <div class="text-center mt-4">
-      <a routerLink="/education" class="btn btn-outline-light">More About My Education</a>
-    </div>
+<!-- 🎓 Education -->
+<div class="education-section">
+  <h3>Education</h3>
+
+  <!-- Sheridan College (Main Education) -->
+  <div class="edu-entry highlight">
+    <strong>Sheridan College – Computer Programming</strong>
+    <p class="date">Sep 2023 – Apr 2025</p>
+    <p>
+      Courses in Java, Angular, Networking, Database Design, AI, Security, DevOps, and Mobile Development.
+    </p>
   </div>
+
+  <!-- Udemy Courses -->
+  <div class="edu-entry udemy">
+    <strong>Python TOTAL – Advanced Python Developer (Udemy)</strong>
+    <p class="date">Completed in 2022</p>
+    <p>Core and advanced Python scripting with OOP, automation, and projects.</p>
+  </div>
+
+  <div class="edu-entry udemy">
+    <strong>Machine Learning & Data Science with Python (Udemy)</strong>
+    <p class="date">Completed in Mar 2023</p>
+    <p>ML pipelines with scikit-learn and data visualization.</p>
+  </div>
+
+  <div class="edu-entry udemy">
+    <strong>Deep Learning with Python (Udemy)</strong>
+    <p class="date">Completed in Sep 2023</p>
+    <p>Neural networks with NumPy and real case implementation.</p>
+  </div>
+
+  <div class="edu-entry udemy">
+    <strong>Generative AI: ChatGPT, Midjourney & More (Udemy)</strong>
+    <p class="date">Completed in Dec 2024</p>
+    <p>LLMs, prompt engineering, and generative content tools.</p>
+  </div>
+
+  <div class="text-center mt-4">
+    <a routerLink="/education" class="btn btn-outline-light">More About My Education</a>
+  </div>
+</div>
 
   <!-- 💬 Quote -->
   <div class="quote-section text-center">

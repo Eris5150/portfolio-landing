@@ -1,0 +1,132 @@
+:host {
+  display: block;
+  background-color: #111;
+  color: white;
+  min-height: 100vh;
+  padding: 3rem 1rem;
+}
+
+.projects-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 3rem 1rem;
+
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid #444;
+    padding-bottom: 0.5rem;
+    text-align: center;
+  }
+
+  .project-entry {
+    margin-bottom: 3rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #333;
+    text-align: left;
+
+    h3 {
+      font-size: 1.6rem;
+      color: #e0e0e0;
+      margin-bottom: 0.8rem;
+    }
+
+    h4 {
+      font-size: 1.15rem;
+      margin-top: 1.5rem;
+      color: #ccc;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: #ccc;
+      margin-bottom: 1rem;
+    }
+
+    ul,
+    ol {
+      margin-left: 1.5rem;
+      color: #bbb;
+
+      li {
+        font-size: 0.95rem;
+        margin-bottom: 0.5rem;
+      }
+    }
+
+    code {
+      background-color: #222;
+      padding: 0.1rem 0.4rem;
+      border-radius: 4px;
+      font-size: 0.9rem;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      max-height: 260px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 1rem;
+    }
+
+    .btn {
+      font-size: 0.95rem;
+    }
+  }
+
+  .project-entry.important {
+    background-color: #1a1a1a;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 0 12px rgba(0, 191, 255, 0.1);
+    margin-bottom: 3rem;
+
+    img {
+      max-height: 340px;
+      object-fit: cover;
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 0 12px rgba(255, 255, 255, 0.05);
+    }
+
+    .gitpod-btn {
+      max-width: 240px;
+      height: auto;
+    }
+  }
+
+  .text-center {
+    text-align: center;
+    margin-top: 2rem;
+  }
+
+  .d-flex {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &.gap-2 {
+      gap: 0.5rem;
+    }
+
+    &.gap-3 {
+      gap: 1rem;
+    }
+
+    &.mt-2 {
+      margin-top: 0.5rem;
+    }
+
+    &.mb-3 {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .text-md-start {
+    @media (min-width: 768px) {
+      text-align: left;
+    }
+  }
+}

@@ -10,8 +10,8 @@
     margin: 0 auto 5rem auto;
 
     img.intro-image {
-      width: 180px; // Ovalada y 20% más chica que el original grande
-      height: 240px;
+      width: 210px;
+      height: 310px;
       object-fit: cover;
       border-radius: 50% / 30%;
       box-shadow: 0 0 10px rgba(232, 219, 219, 0.05);
@@ -25,7 +25,7 @@
     h2 {
       font-weight: 300;
       font-size: 1.5rem;
-      color: #dbd2d2 !important; 
+      color: #dbd2d2 !important;
     }
 
     p {
@@ -37,12 +37,11 @@
   .experience-section,
   .projects-section,
   .skills-section,
-  .education-section,
   .quote-section,
   .contact-section {
     max-width: 900px;
     margin: 4rem auto;
-    background-color: #111; // ✅ se asegura que nada sea blanco
+    background-color: #111;
   }
 
   h3 {
@@ -65,6 +64,78 @@
     }
   }
 
+  .education-section {
+    max-width: 900px;
+    margin: 4rem auto;
+
+    h3 {
+      margin-bottom: 1.5rem;
+      font-size: 2rem;
+      border-bottom: 1px solid #555;
+      padding-bottom: 0.5rem;
+    }
+
+    .edu-entry {
+      margin-bottom: 2rem;
+
+      .date {
+        font-size: 0.9rem;
+        color: #aaa;
+      }
+    }
+
+.edu-entry.highlight {
+  background-color: #222;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 12px rgba(0, 191, 255, 0.3);
+  transition: transform 0.3s ease;
+  transform: scale(1.02);
+
+  strong {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #ffffff;
+  }
+
+  p {
+    font-size: 1.15rem;
+    color: #eee;
+  }
+
+  .date {
+    font-size: 1rem;
+    color: #ccc;
+  }
+}
+
+
+.edu-entry.udemy {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 6px;
+
+  font-size: 0.9rem;
+
+  strong {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ccc;
+  }
+
+  p {
+    font-size: 0.85rem;
+    color: #999;
+  }
+
+  .date {
+    font-size: 0.8rem;
+    color: #666;
+  }
+}
+
+  }
+
   .project-card {
     margin-bottom: 3rem;
     padding-bottom: 2rem;
@@ -73,7 +144,7 @@
     img {
       border-radius: 8px;
       max-width: 100%;
-      max-height: 240px; // ✅ 20% más grande que los 200px anteriores
+      max-height: 240px;
       object-fit: cover;
     }
   }
@@ -97,21 +168,5 @@
     padding: 2rem;
     background: #1a1a1a;
     border-left: 4px solid #ccc;
-  }
-
-  .contact-section {
-    background-color: #111; // ✅ mantiene fondo oscuro hasta el final
-    padding-bottom: 4rem;
-
-    a {
-      color: white;
-      text-decoration: none;
-      font-size: 1.1rem;
-    }
-
-    .social a {
-      color: #ccc;
-      text-decoration: underline;
-    }
   }
 }
