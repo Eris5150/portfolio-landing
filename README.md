@@ -10,6 +10,7 @@ It showcases my professional profile, experience, skills, and featured projects 
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 The portfolio serves as a modern, responsive single-page website built with Angular 19.  
 It highlights my background in full-stack development, cloud deployment (AWS), and AI-powered applications.
@@ -36,6 +37,8 @@ It highlights my background in full-stack development, cloud deployment (AWS), a
 
 ---
 =======
+=======
+>>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
 =======
 >>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
 =======
@@ -81,6 +84,9 @@ npm run start
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
+=======
 >>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
 =======
 >>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
