@@ -1,14 +1,120 @@
+<!-- ============================================================
+     Projects Section (Portfolio)
+     Professional notes:
+     - Organized in descending order of complexity/impact.
+     - Each entry features a visual, clear tech stack, and CTA links.
+     - Uses semantic HTML and Bootstrap utility classes for responsive layout.
+     - Comments clarify purpose and structure; no functional code altered.
+============================================================ -->
 <div class="projects-container">
   <h2 class="section-title">Projects</h2>
+
+  <!-- 🏗️ Disaluvi Platform -->
+  <div class="project-entry important text-center text-md-start">
+    <img src="assets/images/disaluvi.png" alt="Disaluvi Platform" class="img-fluid rounded mb-4 large-project-img" />
+
+    <!-- CTAs: live site access -->
+    <div class="d-flex justify-content-center justify-content-md-end gap-3 mb-3">
+      <a href="https://disaluvi.com" target="_blank" class="btn btn-outline-light">
+        🌐 Visit Site
+      </a>
+    </div>
+
+    <h3>🏗️ Disaluvi – Full-Stack Web Platform for Architectural Solutions</h3>
+    <p>
+      Disaluvi is a production-ready, full-stack web application developed to manage and showcase a company's portfolio
+      and services related to doors, windows, and architectural installations. The system combines a responsive and
+      multilingual Angular frontend with a robust Spring Boot backend, emphasizing real-time updates, secure form
+      handling, and scalable deployment.
+    </p>
+
+    <!-- Tech stack summary -->
+    <h4>🔧 Technologies & Architecture</h4>
+    <ul>
+      <li><strong>Frontend:</strong> Angular 19 with component-based architecture, ngx-translate for i18n, and SCSS for modular styling.</li>
+      <li><strong>Backend:</strong> Spring Boot REST API with modular services, JDBC Template for database operations, and MySQL on AWS RDS.</li>
+      <li><strong>Deployment:</strong> Hosted on AWS:
+        <ul>
+          <li>S3 + CloudFront for static frontend hosting with SPA support.</li>
+          <li>Elastic Beanstalk for backend deployment.</li>
+          <li>Route 53 for custom domain routing.</li>
+          <li>AWS Certificate Manager for HTTPS.</li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Core functionality highlights -->
+    <h4>🚀 Key Features</h4>
+    <ul>
+      <li><strong>WebSocket Integration:</strong> Admin dashboard updates (contact forms, job applications, supplier messages) are pushed in real time via WebSocket communication.</li>
+      <li><strong>Pre-rendering / SSR:</strong> Uses Prerender.io to serve pre-rendered pages to crawlers for SEO optimization, essential for Angular-based SPAs.</li>
+      <li><strong>Admin Panel:</strong> Secure role-based login (Spring Security) with JWT, allowing staff to review and manage user submissions.</li>
+      <li><strong>Secure File Uploads to S3:</strong> File attachments (PDF, DOCX, images) from forms are uploaded securely to Amazon S3 with presigned URLs for access control.</li>
+      <li><strong>AI-Powered Resume Screening:</strong> Integrated a Python + Flask microservice connected to OpenAI to analyze uploaded resumes. It scores candidates (1–10), summarizes qualifications, identifies strengths, and suggests tailored interview questions.</li>
+      <li><strong>Modular Forms:</strong> General contact, job applications, supplier onboarding, and service quotations — each with custom validations, file upload, and email notifications.</li>
+      <li><strong>Project Portfolio & Product Catalog:</strong> Includes filterable project galleries and detailed product pages with image galleries and descriptions.</li>
+    </ul>
+
+    <!-- Security and best practices -->
+    <h4>🛡️ Security & Best Practices</h4>
+    <ul>
+      <li>Enforced HTTPS across all services.</li>
+      <li>Full CORS configuration and CSRF protection.</li>
+      <li>IAM-based S3 access, WAF protection, and audit logging via CloudTrail.</li>
+      <li>Followed Google JavaScript and Oracle Java coding conventions with versioning in GitHub and clean branching strategy.</li>
+    </ul>
+
+    <!-- Embedded demo video -->
+    <h4>🎥 Demo Video</h4>
+    <div class="text-center">
+      <video width="100%" controls style="max-width: 800px; background: #000; border-radius: 10px;">
+        <source src="assets/videos/disaluvi-demo.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p class="mt-2 text-muted">Full Disaluvi walkthrough demo</p>
+    </div>
+  </div>
+
+  <!-- 🍃 AI Nutritionist -->
+  <div class="project-entry important text-center text-md-start">
+    <img src="assets/images/ainutritionist.png" alt="AI Nutritionist" class="img-fluid rounded mb-4 large-project-img" />
+
+    <!-- Live + GitHub links -->
+    <div class="d-flex justify-content-center justify-content-md-end gap-3 mb-3">
+      <a href="https://erickrodriguez.net/AIDietMaker" target="_blank" class="btn btn-outline-light">
+        🍃 Try Live
+      </a>
+      <a href="https://github.com/Eris5150/AIDietMaker" target="_blank" class="btn btn-outline-light">
+        <i class="bi bi-github"></i> View Code
+      </a>
+    </div>
+
+    <h3>🍃 AI Nutritionist</h3>
+    <p>
+      This project uses artificial intelligence to generate a personalized diet plan based on the user's specific
+      information. It's ideal for anyone looking to lose fat, build muscle, or simply improve their overall nutrition.
+    </p>
+    <p><strong>User inputs:</strong></p>
+    <ul>
+      <li><strong>Name</strong></li>
+      <li><strong>Age</strong></li>
+      <li><strong>Sex</strong></li>
+      <li><strong>Height</strong> (in cm)</li>
+      <li><strong>Current Weight</strong> (in lbs)</li>
+      <li><strong>Goal</strong> (e.g., weight loss, muscle gain, maintenance)</li>
+      <li><strong>Physical Activity Level</strong></li>
+      <li><strong>Food Preferences</strong> (e.g., no seafood, no dairy)</li>
+      <li><strong>Diet Type</strong> (e.g., high-protein, vegan, keto)</li>
+      <li><strong>Medical Conditions or Restrictions</strong></li>
+    </ul>
+  </div>
 
   <!-- 🍽️ Restaurant Management System -->
   <div class="project-entry important text-center text-md-start">
     <img src="assets/images/restaurant.png" alt="Restaurant System" class="img-fluid rounded mb-4 large-project-img" />
 
+    <!-- GitHub link only -->
     <div class="d-flex justify-content-center justify-content-md-end gap-3 mb-3">
-      <a href="https://gitpod.io/#https://github.com/Eris5150/restaurant-management-main" target="_blank">
-        <img src="https://gitpod.io/button/open-in-gitpod.svg" alt="Open in Gitpod" class="gitpod-btn" />
-      </a>
       <a href="https://github.com/Eris5150/restaurant-management-main" target="_blank" class="btn btn-outline-light">
         <i class="bi bi-github"></i> View Code
       </a>
@@ -17,46 +123,47 @@
     <h3>🍽️ Restaurant Management System</h3>
     <p>
       A full-stack restaurant management system built with <strong>Spring Boot</strong>, <strong>Thymeleaf</strong>,
-      <strong>Spring Security</strong>, and an <strong>H2 in-memory database</strong>. Designed for educational use with role-based access
-      and a clean admin dashboard.
+      <strong>Spring Security</strong>, and an <strong>H2 in-memory database</strong>. Designed for educational use with
+      role-based access and a clean admin dashboard.
     </p>
+    <ul>
+      <li>✅ Authentication & Roles<br>Two roles: General Manager (GM) and Assistant General Manager (AGM). Secure login/logout with Spring Security and predefined demo accounts.</li>
+      <li>✅ Menu Management<br>Add, edit, delete, and list menu items across categories: appetizers, mains, desserts, and drinks.</li>
+      <li>✅ Inventory Management<br>Track quantities, units, and prices; prevent over-ordering and review stock.</li>
+      <li>✅ Order Management<br>Create and update purchase orders; manage status transitions (Pending, Completed, Cancelled).</li>
+      <li>✅ Reviews Section<br>Displays customer feedback and ratings for transparency.</li>
+    </ul>
 
+    <!-- Demo credentials (for recruiters/testers) -->
     <h4>🔐 Demo Credentials</h4>
     <ul>
       <li><strong>General Manager:</strong> general_manager&#64;restaurant.ca / 12345</li>
       <li><strong>Assistant Manager:</strong> assistant_manager&#64;restaurant.ca / 12345</li>
     </ul>
 
-    <h4>🛠 If the app didn’t open:</h4>
-    <ol>
-      <li>Click the 🔒 icon > Site Settings > Allow Pop-ups</li>
-      <li>Go to Gitpod PORTS tab and open port 8080 manually</li>
-      <li>Example: <code>https://8080-yourworkspace.gitpod.io/</code></li>
-    </ol>
-
     <h4>🧪 Technologies</h4>
     <p>Java 17 · Spring Boot · Spring Security · Thymeleaf · H2 · Maven · Gitpod</p>
   </div>
 
-  <!-- 📅 Angular Movie Booking App -->
-<div class="project-entry row align-items-center">
-  <div class="col-md-6 mb-3 mb-md-0">
-    <img src="assets/images/angular.png" alt="Angular Booking App" class="img-fluid rounded" />
-  </div>
-  <div class="col-md-6">
-    <h3>📅 Angular Booking App</h3>
-    <p>
-      A responsive movie ticket booking system built entirely with Angular. Includes dynamic forms, validations, booking summary, and real-time admin panel integration.
-    </p>
-    <div class="d-flex gap-2 mt-2">
-      <a href="https://erickrodriguez.net/angularBooking" target="_blank" class="btn btn-outline-light">View Live</a>
-      <a href="https://github.com/Eris5150/AnuglarApp" target="_blank" class="btn btn-outline-light">
-        <i class="bi bi-github"></i> View Code
-      </a>
+  <!-- 🧮 App Disaluvi Messure (WPF) -->
+  <div class="project-entry row align-items-center">
+    <div class="col-md-6 mb-3 mb-md-0">
+      <img src="assets/images/cutapp.png" alt="App Disaluvi Messure" class="img-fluid rounded" />
+    </div>
+    <div class="col-md-6">
+      <h3>🧮 App Disaluvi Messure (WPF Desktop)</h3>
+      <p>
+        A production-focused WPF application for optimizing aluminum cuts at Disaluvi.
+        Features residue-minimization logic, intuitive UI with piece status management,
+        and Excel export via ClosedXML for shop-floor workflows.
+      </p>
+      <div class="d-flex gap-2 mt-2">
+        <a href="https://github.com/Eris5150/AppDisaluviMessure" target="_blank" class="btn btn-outline-light">
+          <i class="bi bi-github"></i> View Code
+        </a>
+      </div>
     </div>
   </div>
-</div>
-
 
   <!-- 🎮 Tic Tac Toe -->
   <div class="project-entry row align-items-center">
@@ -65,7 +172,7 @@
     </div>
     <div class="col-md-6">
       <h3>🎮 Tic Tac Toe (Vanilla JS)</h3>
-      <p>A classic Tic Tac Toe game using plain HTML/CSS/JS with responsive UI. Deployed to S3.</p>
+      <p>A classic Tic Tac Toe game using plain HTML/CSS/JS with a responsive UI. Deployed to S3.</p>
       <div class="d-flex gap-2 mt-2">
         <a href="https://erickrodriguez.net/tic-tac-toe" target="_blank" class="btn btn-outline-light">Play Now</a>
         <a href="https://github.com/Eris5150/tic-tac-toe" target="_blank" class="btn btn-outline-light">
@@ -83,7 +190,7 @@
     <div class="col-md-6">
       <h3>💻 HTML Landing Page</h3>
       <p>
-        A simple, elegant, fully responsive one-page website built with HTML, CSS and minimal JavaScript.
+        A simple, elegant, fully responsive one-page website built with HTML, CSS, and minimal JavaScript.
       </p>
       <div class="d-flex gap-2 mt-2">
         <a href="https://erickrodriguez.net/Landing" target="_blank" class="btn btn-outline-light">View Live</a>

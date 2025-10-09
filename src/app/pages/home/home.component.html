@@ -1,125 +1,186 @@
+<!-- ============================================================
+     Home Section (Portfolio Overview)
+     Professional notes:
+     - Serves as the “elevator pitch” section of the portfolio.
+     - Combines personal intro, experience summary, key projects,
+       and education highlights in a scroll-friendly layout.
+     - Comment style kept concise, recruiter-friendly, and structured.
+============================================================ -->
 <section class="home-container">
 
   <!-- 👤 Intro Section -->
+  <!-- First impression: profile image + concise professional summary -->
   <div class="intro-section container d-flex flex-column flex-md-row align-items-center justify-content-center">
 
-    <!-- Imagen estilo redondeado -->
+    <!-- Profile Image (Rounded visual focus for personal branding) -->
     <div class="intro-image-container">
       <img src="assets/images/profile.png" alt="Erick Rodríguez" class="intro-image" />
     </div>
 
-    <!-- Texto -->
+    <!-- Introductory Text: Role, tagline, tools summary -->
     <div class="intro-text ms-md-5 mt-4 mt-md-0">
       <h1>Erick Rodríguez</h1>
       <h2 class="text-muted">Full-Stack Developer</h2>
       <p>
-        I’m a full-stack developer passionate about building modern, intelligent web apps. My work spans from AI-powered dashboards with Angular and Spring Boot, to interactive UIs and cloud deployment pipelines.
+        I’m a full-stack developer passionate about building modern, intelligent web apps. My work spans from AI-powered
+        dashboards with Angular and Spring Boot, to interactive UIs and cloud deployment pipelines.
       </p>
       <p>
         Tools I use daily: Angular · Spring Boot · TypeScript · Python · Flask · SQL · WPF · AWS
       </p>
-      <a href="assets/resume-erick.pdf" class="btn btn-outline-light mt-3" download>View Resume</a>
+      <!-- Direct resume download CTA -->
+      <a href="assets/resume-erick-rosal.pdf" class="btn btn-outline-light mt-3" download>View Resume</a>
     </div>
   </div>
 
- <!-- 🧑‍💼 Experience Section -->
-<div class="experience-section">
-  <h3>Professional Experiences</h3>
+  <!-- 🧑‍💼 Experience Section -->
+  <!-- Focuses on technical and interpersonal growth -->
+  <div class="experience-section">
+    <h3>Professional Experiences</h3>
 
-  <!-- Freelance / Disaluvi -->
-  <div class="exp">
-    <h5>Full-Stack Developer (Freelance) &#64; Disaluvi <span class="date">Apr 2025 – Present</span></h5>
-    <ul>
-      <li>Leading the development of a complete web solution for a mid-size company offering architectural solutions (doors, windows, facades).</li>
-      <li>Built a responsive Angular frontend and Spring Boot backend with real-time messaging, email automation, file uploads, and admin panels.</li>
-      <li>Implemented secure forms for clients, job applicants, and suppliers, integrated with MongoDB and AWS S3.</li>
-      <li>Designed a modular architecture to enable future scalability and AI-based resume analysis.</li>
-    </ul>
+    <!-- Freelance / Disaluvi -->
+    <div class="exp">
+      <h5>Full-Stack Developer (Freelance) &#64; Disaluvi <span class="date">Apr 2025 – Present</span></h5>
+      <ul>
+        <li>Leading the development of a complete web solution for a mid-size company offering architectural solutions
+          (doors, windows, facades).</li>
+        <li>Built a responsive Angular frontend and Spring Boot backend with real-time messaging, email automation, file
+          uploads, and admin panels.</li>
+        <li>Implemented secure forms for clients, job applicants, and suppliers, integrated with MongoDB and AWS S3.</li>
+        <li>Designed a modular architecture to enable future scalability and AI-based resume analysis.</li>
+      </ul>
+    </div>
+
+    <!-- Ruby Soho -->
+    <div class="exp">
+      <h5>Server Assistant &#64; Ruby Soho <span class="date">Oct 2023 – Apr 2025</span></h5>
+      <ul>
+        <li>Provided front- and back-of-house support in high-pressure service environments.</li>
+        <li>Strengthened team coordination and client interaction skills.</li>
+      </ul>
+    </div>
+
+    <!-- Teleperformance -->
+    <div class="exp">
+      <h5>IT Support Specialist &#64; TP <span class="date">Feb 2023 – Jul 2023</span></h5>
+      <ul>
+        <li>Resolved hardware/software issues and guided users remotely.</li>
+        <li>Provided technical support in fast-paced environments.</li>
+      </ul>
+    </div>
+
+    <!-- CTA for detailed experience page -->
+    <a routerLink="/experiences" class="btn btn-outline-light mt-3">View More</a>
   </div>
 
-  <!-- Ruby Soho -->
-  <div class="exp">
-    <h5>Server Assistant &#64; Ruby Soho <span class="date">Oct 2023 – Apr 2025</span></h5>
-    <ul>
-      <li>Provided front- and back-of-house support in high-pressure service environments.</li>
-      <li>Strengthened team coordination and client interaction skills.</li>
-    </ul>
+  <!-- 🧩 Projects Section -->
+  <!-- Highlights key projects to show technical range and consistency -->
+  <div class="projects-section">
+    <h3>Personal Projects</h3>
+
+    <!-- 🏗️ Disaluvi Platform -->
+    <div class="project-card row">
+      <div class="col-md-6">
+        <img src="assets/images/disaluvi.png" alt="Disaluvi Web Platform" class="img-fluid rounded" />
+      </div>
+      <div class="col-md-6">
+        <h4>Disaluvi – Full-Stack Web Platform</h4>
+        <h5>My biggest project so far</h5>
+        <p>
+          A production-grade platform for a company offering architectural glass and aluminum solutions. Features a
+          multilingual Angular frontend, Spring Boot backend, real-time admin dashboard with WebSocket, AWS S3 file
+          handling, Prerender.io SEO integration, and a Python+Flask microservice for AI-powered resume analysis.
+        </p>
+        <a href="https://disaluvi.com" target="_blank" class="btn btn-secondary">Visit Site</a>
+        <br><br>
+        <a routerLink="/projects" class="btn btn-primary">View More</a>
+      </div>
+    </div>
+
+    <!-- 🥦 AI Nutritionist -->
+    <div class="project-card row">
+      <div class="col-md-6">
+        <img src="assets/images/ainutritionist.png" alt="AI Nutritionist App" class="img-fluid rounded" />
+      </div>
+      <div class="col-md-6">
+        <h4>AI Nutritionist</h4>
+        <p>
+          A simple yet powerful AI tool that generates weekly personalized diet plans based on user data like age,
+          weight, goals, and dietary restrictions.
+        </p>
+        <div class="d-flex gap-2 mt-2">
+          <a href="https://erickrodriguez.net/AIDietMaker" target="_blank" class="btn btn-secondary">Try Live</a>
+          <a href="https://github.com/Eris5150/AIDietMaker" target="_blank" class="btn btn-outline-light">
+            <i class="bi bi-github"></i> View Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🍽️ Restaurant Management System -->
+    <div class="project-card row">
+      <div class="col-md-6">
+        <img src="assets/images/restaurant.png" alt="Restaurant Demo" class="img-fluid rounded" />
+      </div>
+      <div class="col-md-6">
+        <h4>Restaurant Management System</h4>
+        <p>Spring Boot + Thymeleaf app with user roles, order handling, and H2 DB. Launch instantly in Gitpod.</p>
+        <a routerLink="/projects" class="btn btn-primary">View More</a>
+      </div>
+    </div>
+
+    <!-- 🎟️ App Disaluvi Messure -->
+    <div class="project-card row">
+      <div class="col-md-6">
+        <img src="assets/images/cutapp.png" alt="App Disaluvi Messure" class="img-fluid rounded" />
+      </div>
+      <div class="col-md-6">
+        <h4>Optimizing Material Cuts App</h4>
+        <p>
+          A WPF desktop application built for Disaluvi to optimize aluminum cutting processes.
+          Provides an intuitive UI, residue minimization logic, and Excel export for production efficiency.
+          Developed in C# with MVVM architecture and integrated data visualization.
+        </p>
+        <div class="d-flex gap-2 mt-2">
+          <a href="https://github.com/Eris5150/AppDisaluviMessure" target="_blank" class="btn btn-outline-light">
+            <i class="bi bi-github"></i> View Code
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 🎮 Tic Tac Toe -->
+    <div class="project-card row">
+      <div class="col-md-6">
+        <img src="assets/images/tictactoe.png" alt="Tic Tac Toe" class="img-fluid rounded" />
+      </div>
+      <div class="col-md-6">
+        <h4>Tic Tac Toe (Vanilla JS)</h4>
+        <p>A classic game built with responsive UI, available live on S3.</p>
+        <a href="https://erickrodriguez.net/tic-tac-toe" target="_blank" class="btn btn-secondary">Play Now</a>
+      </div>
+    </div>
+
+    <!-- 💻 HTML Landing Page -->
+    <div class="project-card row">
+      <div class="col-md-6">
+        <img src="assets/images/landing.png" alt="Landing" class="img-fluid rounded" />
+      </div>
+      <div class="col-md-6">
+        <h4>HTML Landing Page</h4>
+        <p>Responsive one-page static site with minimal JavaScript. Fully accessible and optimized for mobile.</p>
+        <a href="https://erickrodriguez.net/Landing" target="_blank" class="btn btn-secondary">View Live</a>
+      </div>
+    </div>
+
+    <!-- CTA for all projects -->
+    <div class="text-center mt-4">
+      <a routerLink="/projects" class="btn btn-outline-light">View All Projects</a>
+    </div>
   </div>
-
-  <!-- Teleperformance -->
-  <div class="exp">
-    <h5>IT Support Specialist &#64; TP <span class="date">Feb 2023 – Jul 2023</span></h5>
-    <ul>
-      <li>Resolved hardware/software issues and guided users remotely.</li>
-      <li>Provided technical support in fast-paced environments.</li>
-    </ul>
-  </div>
-
-  <a routerLink="/experiences" class="btn btn-outline-light mt-3">View More</a>
-</div>
-
-    <!-- 🧩 Projects Section -->
-<div class="projects-section">
-  <h3>Personal Projects</h3>
-
-  <!-- 🍽️ Restaurant Management System -->
-  <div class="project-card row">
-    <div class="col-md-6">
-      <img src="assets/images/restaurant.png" alt="Restaurant Demo" class="img-fluid rounded" />
-    </div>
-    <div class="col-md-6">
-      <h4>Restaurant Management System</h4>
-      <p>Spring Boot + Thymeleaf app with user roles, order handling, and H2 DB. Launch instantly in Gitpod.</p>
-      <a routerLink="/projects" class="btn btn-primary">View More</a>
-    </div>
-  </div>
-
-  <!-- 🎟️ Angular Movie Booking App -->
-  <div class="project-card row">
-    <div class="col-md-6">
-      <img src="assets/images/angular.png" alt="Angular Movie App" class="img-fluid rounded" />
-    </div>
-    <div class="col-md-6">
-      <h4>Angular Movie Booking App</h4>
-      <p>
-        A modern movie ticket booking application with Angular. Features form validation, booking summaries,
-        and admin panel connectivity. Fully deployed and functional.
-      </p>
-      <a href="https://erickrodriguez.net/angularBooking" target="_blank" class="btn btn-secondary">Try Live</a>
-    </div>
-  </div>
-
-  <!-- 🎮 Tic Tac Toe -->
-  <div class="project-card row">
-    <div class="col-md-6">
-      <img src="assets/images/tictactoe.png" alt="Tic Tac Toe" class="img-fluid rounded" />
-    </div>
-    <div class="col-md-6">
-      <h4>Tic Tac Toe (Vanilla JS)</h4>
-      <p>A classic game built with responsive UI, available live on S3.</p>
-      <a href="https://erickrodriguez.net/tic-tac-toe" target="_blank" class="btn btn-secondary">Play Now</a>
-    </div>
-  </div>
-
-  <!-- 💻 HTML Landing Page -->
-  <div class="project-card row">
-    <div class="col-md-6">
-      <img src="assets/images/landing.png" alt="Landing" class="img-fluid rounded" />
-    </div>
-    <div class="col-md-6">
-      <h4>HTML Landing Page</h4>
-      <p>Responsive one-page static site with minimal JavaScript. Fully accessible and optimized for mobile.</p>
-      <a href="https://erickrodriguez.net/Landing" target="_blank" class="btn btn-secondary">View Live</a>
-    </div>
-  </div>
-
-  <div class="text-center mt-4">
-    <a routerLink="/projects" class="btn btn-outline-light">View All Projects</a>
-  </div>
-</div>
-
 
   <!-- 🛠 Skills Section -->
+  <!-- Compact skill preview to reinforce technical range -->
   <div class="skills-section">
     <h3>Skills</h3>
     <div class="skill-chips">
@@ -137,50 +198,53 @@
     </div>
   </div>
 
-<!-- 🎓 Education -->
-<div class="education-section">
-  <h3>Education</h3>
+  <!-- 🎓 Education -->
+  <!-- Summarizes formal education and certifications -->
+  <div class="education-section">
+    <h3>Education</h3>
 
-  <!-- Sheridan College (Main Education) -->
-  <div class="edu-entry highlight">
-    <strong>Sheridan College – Computer Programming</strong>
-    <p class="date">Sep 2023 – Apr 2025</p>
-    <p>
-      Courses in Java, Angular, Networking, Database Design, AI, Security, DevOps, and Mobile Development.
-    </p>
-  </div>
+    <!-- Sheridan College -->
+    <div class="edu-entry highlight">
+      <strong>Sheridan College – Computer Programming</strong>
+      <p class="date">Sep 2023 – Apr 2025</p>
+      <p>
+        Courses in Java, Angular, Networking, Database Design, AI, Security, DevOps, and Mobile Development.
+      </p>
+    </div>
 
-  <!-- Udemy Courses -->
-  <div class="edu-entry udemy">
-    <strong>Python TOTAL – Advanced Python Developer (Udemy)</strong>
-    <p class="date">Completed in 2022</p>
-    <p>Core and advanced Python scripting with OOP, automation, and projects.</p>
-  </div>
+    <!-- Udemy Certifications -->
+    <div class="edu-entry udemy">
+      <strong>Python TOTAL – Advanced Python Developer (Udemy)</strong>
+      <p class="date">Completed in 2022</p>
+      <p>Core and advanced Python scripting with OOP, automation, and projects.</p>
+    </div>
 
-  <div class="edu-entry udemy">
-    <strong>Machine Learning & Data Science with Python (Udemy)</strong>
-    <p class="date">Completed in Mar 2023</p>
-    <p>ML pipelines with scikit-learn and data visualization.</p>
-  </div>
+    <div class="edu-entry udemy">
+      <strong>Machine Learning & Data Science with Python (Udemy)</strong>
+      <p class="date">Completed in Mar 2023</p>
+      <p>ML pipelines with scikit-learn and data visualization.</p>
+    </div>
 
-  <div class="edu-entry udemy">
-    <strong>Deep Learning with Python (Udemy)</strong>
-    <p class="date">Completed in Sep 2023</p>
-    <p>Neural networks with NumPy and real case implementation.</p>
-  </div>
+    <div class="edu-entry udemy">
+      <strong>Deep Learning with Python (Udemy)</strong>
+      <p class="date">Completed in Sep 2023</p>
+      <p>Neural networks with NumPy and real case implementation.</p>
+    </div>
 
-  <div class="edu-entry udemy">
-    <strong>Generative AI: ChatGPT, Midjourney & More (Udemy)</strong>
-    <p class="date">Completed in Dec 2024</p>
-    <p>LLMs, prompt engineering, and generative content tools.</p>
-  </div>
+    <div class="edu-entry udemy">
+      <strong>Generative AI: ChatGPT, Midjourney & More (Udemy)</strong>
+      <p class="date">Completed in Dec 2024</p>
+      <p>LLMs, prompt engineering, and generative content tools.</p>
+    </div>
 
-  <div class="text-center mt-4">
-    <a routerLink="/education" class="btn btn-outline-light">More About My Education</a>
+    <!-- Education CTA -->
+    <div class="text-center mt-4">
+      <a routerLink="/education" class="btn btn-outline-light">More About My Education</a>
+    </div>
   </div>
-</div>
 
   <!-- 💬 Quote -->
+  <!-- Simple motivational footer quote for personal touch -->
   <div class="quote-section text-center">
     <blockquote>
       “Programming isn't about what you know; it's about what you can figure out.”

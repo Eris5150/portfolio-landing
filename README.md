@@ -1,59 +1,90 @@
-# PortfolioLanding
+# Erick Rodríguez – Personal Portfolio
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.9.
+This repository contains the source code for my personal portfolio website: **[erickrodriguez.net](https://erickrodriguez.net)**.  
+It showcases my professional profile, experience, skills, and featured projects built across various technologies.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Overview
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+
+The portfolio serves as a modern, responsive single-page website built with Angular 19.  
+It highlights my background in full-stack development, cloud deployment (AWS), and AI-powered applications.
+
+---
+
+## 🧱 Tech Stack
+
+| Layer | Technologies |
+|-------|---------------|
+| Frontend | Angular 19, TypeScript, SCSS |
+| Libraries | ngx-translate, Angular Material, marked.js |
+| Deployment | AWS S3 + CloudFront + Route53 + SSL via ACM |
+| SEO & i18n | Dynamic SEO metadata, bilingual routing (EN/ES) |
+| Tools | GitHub, VS Code, Node.js 22 |
+
+---
+
+## 🌍 Features
+
+- Project showcase with live links and descriptions  
+- Contact and social links integration  
+- Deployed on AWS with global CDN and HTTPS
+
+---
+=======
+=======
+>>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
+=======
+>>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
+=======
+>>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
+
+The portfolio serves as a modern, responsive single-page website built with Angular 19.  
+It highlights my background in full-stack development, cloud deployment (AWS), and AI-powered applications.
+
+---
+
+## 🧱 Tech Stack
+
+| Layer | Technologies |
+|-------|---------------|
+| Frontend | Angular 19, TypeScript, SCSS |
+| Libraries | ngx-translate, Angular Material, marked.js |
+| Deployment | AWS S3 + CloudFront + Route53 + SSL via ACM |
+| SEO & i18n | Dynamic SEO metadata, bilingual routing (EN/ES) |
+| Tools | GitHub, VS Code, Node.js 22 |
+
+---
+
+## 🌍 Features
+
+- Fully bilingual website (English / Spanish)  
+- Dynamic SEO metadata with ngx-translate  
+- Responsive design optimized for mobile and desktop  
+- Project showcase with live links and descriptions  
+- Contact and social links integration  
+- Deployed on AWS with global CDN and HTTPS
+
+---
+
+## ⚙️ Setup & Installation
 
 ```bash
-ng serve
-```
-
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+git clone https://github.com/Eris5150/landing-portfolio.git
+cd landing-portfolio
+npm install
+npm run start
+<<<<<<< HEAD
+<<<<<<< HEAD
+<<<<<<< HEAD
+>>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
+=======
+>>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
+=======
+>>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
+=======
+>>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
