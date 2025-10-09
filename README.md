@@ -11,18 +11,6 @@ It highlights my background in full-stack development, cloud deployment (AWS), a
 
 ---
 
-## 🧱 Tech Stack
-
-| Layer | Technologies |
-|-------|---------------|
-| Frontend | Angular 19, TypeScript, SCSS |
-| Libraries | ngx-translate, Angular Material, marked.js |
-| Deployment | AWS S3 + CloudFront + Route53 + SSL via ACM |
-| SEO & i18n | Dynamic SEO metadata, bilingual routing (EN/ES) |
-| Tools | GitHub, VS Code, Node.js 22 |
-
----
-
 ## 🌍 Features
 
 - Project showcase with live links and descriptions  
@@ -41,7 +29,6 @@ It highlights my background in full-stack development, cloud deployment (AWS), a
 | Frontend | Angular 19, TypeScript, SCSS |
 | Libraries | ngx-translate, Angular Material, marked.js |
 | Deployment | AWS S3 + CloudFront + Route53 + SSL via ACM |
-| SEO & i18n | Dynamic SEO metadata, bilingual routing (EN/ES) |
 | Tools | GitHub, VS Code, Node.js 22 |
 
 ---
