@@ -6,11 +6,28 @@ It showcases my professional profile, experience, skills, and featured projects 
 ---
 
 ## 🚀 Overview
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
+The portfolio serves as a modern, responsive single-page website built with Angular 19.  
+It highlights my background in full-stack development, cloud deployment (AWS), and AI-powered applications.
+
+---
+
+## 🧱 Tech Stack
+
+| Layer | Technologies |
+|-------|---------------|
+| Frontend | Angular 19, TypeScript, SCSS |
+| Libraries | ngx-translate, Angular Material, marked.js |
+| Deployment | AWS S3 + CloudFront + Route53 + SSL via ACM |
+| SEO & i18n | Dynamic SEO metadata, bilingual routing (EN/ES) |
+| Tools | GitHub, VS Code, Node.js 22 |
+
+---
+
+## 🌍 Features
+
+- Project showcase with live links and descriptions  
+- Contact and social links integration  
+- Deployed on AWS with global CDN and HTTPS
 
 The portfolio serves as a modern, responsive single-page website built with Angular 19.  
 It highlights my background in full-stack development, cloud deployment (AWS), and AI-powered applications.
@@ -36,61 +53,5 @@ It highlights my background in full-stack development, cloud deployment (AWS), a
 - Deployed on AWS with global CDN and HTTPS
 
 ---
-=======
-=======
->>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
-=======
->>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
-=======
->>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
-=======
->>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
 
-The portfolio serves as a modern, responsive single-page website built with Angular 19.  
-It highlights my background in full-stack development, cloud deployment (AWS), and AI-powered applications.
 
----
-
-## 🧱 Tech Stack
-
-| Layer | Technologies |
-|-------|---------------|
-| Frontend | Angular 19, TypeScript, SCSS |
-| Libraries | ngx-translate, Angular Material, marked.js |
-| Deployment | AWS S3 + CloudFront + Route53 + SSL via ACM |
-| SEO & i18n | Dynamic SEO metadata, bilingual routing (EN/ES) |
-| Tools | GitHub, VS Code, Node.js 22 |
-
----
-
-## 🌍 Features
-
-- Fully bilingual website (English / Spanish)  
-- Dynamic SEO metadata with ngx-translate  
-- Responsive design optimized for mobile and desktop  
-- Project showcase with live links and descriptions  
-- Contact and social links integration  
-- Deployed on AWS with global CDN and HTTPS
-
----
-
-## ⚙️ Setup & Installation
-
-```bash
-git clone https://github.com/Eris5150/landing-portfolio.git
-cd landing-portfolio
-npm install
-npm run start
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
->>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
-=======
->>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
-=======
->>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
-=======
->>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
-=======
->>>>>>> 9bce4e832a34edd17169fd71149da677b694edf0
